@@ -1,0 +1,11 @@
+.u-text-ellipsis {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.u-text-break {
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}

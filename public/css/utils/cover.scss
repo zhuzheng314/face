@@ -1,0 +1,144 @@
+// element-ui样式重写
+.el-menu {
+  background-color: #01234C;
+}
+.el-submenu .el-menu {
+  background-color: #00316B;
+  & .el-menu-item:hover {
+    background-color: #004DA1;
+  }
+}
+.el-menu-item, .el-submenu__title {
+  color: #fff;
+  &:hover {
+    background-color: #004DA1;
+  }
+}
+.el-menu-item {
+  &.is-active {
+    color: #fff;
+    background-color: #004DA1;
+  }
+}
+*{
+  box-sizing: border-box;
+}
+// 表头样式重写
+.el-table th > .cell{
+  padding: 12px 8px;
+  line-height: 1.3;
+  font-weight: normal;
+  color: #333333;
+}
+.el-table th {
+  background-color: #f7f7f7;
+}
+.el-table {
+  color: #333333;
+}
+.el-table__footer-wrapper thead div, .el-table__header-wrapper thead div{
+  background-color: #f7f7f7;
+}
+// 分页器样式重写
+.el-pager li{
+  margin-left: 5px;
+  margin-right: 5px;
+  border: 1px solid #2c8cff;
+}
+.el-pagination .btn-prev, .el-pagination .btn-next, .el-pagination .btn-prev{
+  margin-left: 5px;
+  margin-right: 5px;
+  border: 1px solid #2c8cff;
+}
+.el-pager li.active + li {
+  border: 1px solid #2c8cff;
+}
+.el-pager li:last-child {
+  border: 1px solid #2c8cff;
+}
+.page{
+  margin-top: 30px;
+  float: right;
+}
+// 按钮样式重写
+.el-button--primary{
+  border-color: #004da1;
+  background-color: #004da1;
+  min-width: 88px;
+}
+.el-button--default{
+  min-width: 88px;
+}
+.el-button--primary:focus,.el-button--primary:hover{
+  border-color: #0055bf;
+  background-color: #0055bf;
+}
+// 弹出框样式重写
+.el-dialog--tiny{
+  width: 460px;
+}
+.el-dialog--small{
+  width: 747px;
+}
+.el-dialog{
+  border-radius: 3px;
+  &__header{
+    background-color: #f8f8f8;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    border-radius: 3px 3px 0 0;
+  }
+  &__title{
+    color: #333333;
+    font-weight: normal;
+  }
+  &__headerbtn{
+    height: 50px;
+    .el-dialog__close{
+      font-size: 12px;
+    }
+  }
+}
+// 表单验证地步空白
+.el-form-item{
+  margin-bottom: 26px;
+}
+// 改掉表单验证提示文字颜色
+.el-form-item__error{
+  color: #d0011b;
+}
+.el-form-item.is-error .el-input__inner, .el-form-item.is-error .el-textarea__inner{
+  border-color: #d0011b;
+}
+// 改掉表单验证required前面的*号
+.el-form-item.is-required .el-form-item__label:before{
+  content: '';
+  margin-right: 0;
+}
+// 新增帐号弹框样式
+.add-account{
+  width: 100%;
+  padding: 15px 30px;
+}
+// 弹出框底部两个按钮居中
+.modal-button-wrap{
+  margin-top: 16px;
+  position: relative;
+  float: left;
+  left: 50%;
+  .button-cont{
+    position: relative;
+    float: left;
+    left: -50%;
+    .el-button:first-child{
+      margin-right: 20px;
+    }
+  }
+}
+.el-select-dropdown {
+  top: 50px !important ; //改变select的下拉框的高度
+}
+.el-dialog__header{
+  text-align: left;
+}

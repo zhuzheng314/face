@@ -1,0 +1,5 @@
+build/*.js
+config/*.js
+src/utils/face/face-min.js
+src/utils/face/tracking.js
+src/utils/face/tracking-min.js

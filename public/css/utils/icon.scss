@@ -1,0 +1,29 @@
+.icon-item {
+  float: left;
+  width: 15px;
+  height: 100%;
+  line-height: 1;
+  vertical-align: middle;
+  -webkit-font-smoothing: antialiased;
+  margin-right: 10px;
+  background: url('../img/icon-account.png') no-repeat;
+  background-size: 15px auto;
+  background-position: left center;
+  &::after {
+    clear: both;
+  }
+}
+.icon-general {
+  @extend .icon-item;
+}
+.icon-account {
+  @extend .icon-item;
+  margin-right: 5px;
+  background-image: url('../img/icon-account.png');
+  background-size: 16px auto;
+}
+.icon-log {
+  @extend .icon-item;
+  margin-right: 5px;
+  background-image: url('../img/icon-log.png');
+}

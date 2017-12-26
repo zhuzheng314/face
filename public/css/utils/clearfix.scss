@@ -1,0 +1,11 @@
+.u-clearfix {
+  // display: inline-block;
+  &:after {
+    content: ' ';
+    display: block;
+    visibility: hidden;
+    clear: both;
+    font-size: 0;
+    height: 0;
+  }
+}
